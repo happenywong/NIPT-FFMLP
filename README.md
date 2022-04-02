@@ -15,7 +15,7 @@
 ### github地址
 
 ```
-https://github.com/
+https://github.com/happenywong/NIPT-FFMLP
 ```
 
 ### 主要功能
