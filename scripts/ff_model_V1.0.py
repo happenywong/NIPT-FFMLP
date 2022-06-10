@@ -156,7 +156,7 @@ def train_function(config, x, y):
         logger.info('主成分分析降低特征维度')
         pca = PCA(n_components=None, whiten=True)
         pca.fit(x_train)
-        x_train = torch.FloatTensor(pca.fit_transform(x_train))[:, :config['FN']]
+        x_train = torch.FloatTensor(pca.transform(x_train))[:, :config['FN']]
         x_test = torch.FloatTensor(pca.transform(x_test))[:, :config['FN']]
         ##########################################################################
         #  打包数据
